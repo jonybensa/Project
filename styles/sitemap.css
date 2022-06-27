@@ -1,0 +1,86 @@
+h1 {
+  font-family: "kayak sans";
+  font-size: 50px;
+  text-align: center;
+  color: #56afe0;
+}
+h2 {
+  font-family: "Kayak sans";
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #56afe0;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Kayak Sans";
+  font-size: 20px;
+}
+.topnav a:hover {
+  background-color: white;
+  color: #56afe0;
+}
+.search {
+  background-color: white;
+  font-family: "Kayak Sans";
+  border: none;
+  cursor: text;
+  padding: 5px 15px 8px 18px;
+  height: 20px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 12px;
+  border-radius: 2%;
+}
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+element.style {
+  color: #56afe0;
+  font-weight: 800;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: "Kayak Sans";
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+a:visited {
+  text-decoration: none;
+}
+.sports {
+  color: #56afe0;
+  font-family: "Kayak Sans";
+  font-weight: bold;
+  font-size: 30px;
+  padding: 50px;
+}

@@ -1,0 +1,77 @@
+body {
+  background-color: white;
+}
+h1 {
+  font-family: "kayak sans";
+  font-size: 50px;
+  text-align: center;
+  color: #56afe0;
+}
+h2,
+p,
+h3 {
+  font-family: "Kayak sans";
+  margin-left: 300px;
+  margin-right: 300px;
+}
+p {
+  font-size: 20px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #56afe0;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Kayak Sans";
+  font-size: 20px;
+}
+.topnav a:hover {
+  background-color: white;
+  color: #56afe0;
+}
+.search {
+  background-color: white;
+  font-family: "Kayak Sans";
+  border: none;
+  cursor: text;
+  padding: 5px 15px 8px 18px;
+  height: 20px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 12px;
+  border-radius: 2%;
+}
+img {
+  width: 300px;
+  float: left;
+  padding: 20px;
+}
+#tapas {
+  position: relative;
+  margin-left: 370px;
+}
+ul {
+  margin-left: 300px;
+}
+li {
+  list-style: none;
+  font-family: 'Kayak Sans';
+  font-size: 20px;
+}
+#sitemapid {
+    text-align: left;
+  }
+  a {
+    text-decoration: none;
+    color: #56afe0;
+  }
