@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home / Casa</title>
-<link rel="stylesheet" href="styles/index.css">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>why you should visit Barcelona</h1>
+    <h1>Why you should visit Barcelona</h1>
     <div class="topnav">
       <a href="index.html">Home / Casa</a>
       <a href="sports.html">Sports</a>
@@ -17,91 +17,123 @@
       <a href="art-history.html">Art / History</a>
       <a href="hotspots.html">Hotspots</a>
       <a href="nightlife.html">Nightlife</a>
-      <input type="text" name="search" class="search" maxlength="150" placeholder="search">
+      <a href="contact.html">Contact</a>
+      <input
+        type="text"
+        name="search"
+        class="search"
+        maxlength="150"
+        placeholder="search"
+      />
     </div>
 
-    <br>
+    <br />
 
     <!-- Slideshow container -->
-<div class="slideshow-container">
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <a href="sports.html"
+          ><img src="images/barcelona celebration.jpg" style="width: 100%"
+        /></a>
+        <div class="text">Barcelona Sports</div>
+      </div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="images/barcelona celebration.jpg" style="width:100%">
-    <div class="text">Barcelona Sports</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <a href="food-restaurants.html"
+          ><img src="images/tapas.jpg" style="width: 100%"
+        /></a>
+        <div class="text">Barcelona Food</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="images/tapas.jpg" style="width:100%">
-    <div class="text">Barcelona Food</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <a href="art-history.html"
+          ><img src="images/sagrada familia.webp" style="width: 100%"
+        /></a>
+        <div class="text">Art / History</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="images/sagrada familia.webp" style="width:100%">
-    <div class="text">Art / History</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <a href="hotspots.html"
+          ><img src="images/Hotel W.jpg" style="width: 100%"
+        /></a>
+        <div class="text">Hotspots</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="images/Hotel W.jpg" style="width:100%">
-    <div class="text">Hotspots</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <a href="nightlife.html"
+          ><img src="images/pacha-barcelona.jpg" style="width: 100%"
+        /></a>
+        <div class="text">Nightlife</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="images/pacha-barcelona.jpg" style="width:100%">
-    <div class="text">Nightlife</div>
-  </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-<script>
-  let slideIndex = 1;
-showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-</div>
-
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </div>
+    <br />
+    <p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.65575759228!2d2.0699776133552983!3d41.39264661062817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Spain!5e0!3m2!1sen!2sus!4v1658455668441!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </p>
+    <br />
     <h2 id="sitemapid"><a href="sitemap.html">Visit Barcelona Sitemap</a></h2>
   </body>
 </html>
